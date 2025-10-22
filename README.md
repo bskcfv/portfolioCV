@@ -43,7 +43,7 @@ Incluye **tablas**, **secuencias**, **procedimientos**, **funciones**, **trigger
 ## 📫 Contacto
 
 - **Nombre:** Cristian Valderrama  
-- **Rol:** Backend Developer | Database Specialist  
+- **Rol:** Backend Database Developer   
 - **GitHub:** [github.com/CristianValderrama](https://github.com/CristianValderrama)  
 - **LinkedIn:** [linkedin.com/in/cristianvalderrama]((https://www.linkedin.com/in/crisheads/))
 
