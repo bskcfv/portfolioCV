@@ -1,0 +1,51 @@
+/* 🔹 Sección de Badges */
+#badges {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #0b0f19;
+}
+
+#badges h2 {
+  font-size: 2rem;
+  color: #58a6ff;
+  margin-bottom: 20px;
+}
+
+.skills-description {
+  color: #ccc;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.badges-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.badge-card {
+  background: #161b22;
+  border-radius: 16px;
+  padding: 15px 20px;
+  width: 220px;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.badge-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 16px rgba(0, 255, 255, 0.25);
+}
+
+.badge-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.badge-card p {
+  color: #ddd;
+  font-size: 0.9rem;
+  margin: 0;
+}

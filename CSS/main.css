@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0b0f19;
+  color: #e0e6ed;
+  scroll-behavior: smooth;
+}
+
+/* MAIN */
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 80vh;
+  background: linear-gradient(180deg, #0b0f19 0%, #0f1729 100%);
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.typing {
+  border-right: 2px solid #47494b;
+  display: inline-block;
+  color: #5b6e81;
+  margin-bottom: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* ----- Sections ----- */
+.section {
+  padding: 100px 10%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* === BOTÓN REDONDO ELEGANTE === */
+.btn-round {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #233d86, #2e63a0);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 0 12px rgba(35, 106, 134, 0.5);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  margin-right: 5px;
+}
+
+.btn-round:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(35, 106, 134, 0.8);
+  background: linear-gradient(135deg, #2e8fa0, #3fb3b9);
+}
+
+.btn-round:active {
+  transform: scale(0.95);
+}
+
+/* Opción para modo oscuro suave */
+.btn-round.dark {
+  background: linear-gradient(135deg, #21262d, #30363d);
+  color: #58a6ff;
+  box-shadow: 0 0 10px rgba(56, 139, 253, 0.3);
+}
+
+.btn-round.dark:hover {
+  background: linear-gradient(135deg, #30363d, #484f58);
+  box-shadow: 0 0 20px rgba(88, 166, 255, 0.5);
+}
+
+#a-red {
+  text-decoration: none;
+  color: #e0e6ed;
+  transition: color 0.3s;
+  font-weight: 5;
+}

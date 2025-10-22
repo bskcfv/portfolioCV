@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cristian Valderrama | Backend Developer</title>
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="/CSS/header.css">
+  <link rel="stylesheet" href="CSS/secTech.css">
+  <link rel="stylesheet" href="CSS/about.css">
+  <link rel="stylesheet" href="CSS/badges.css">
+  <link rel="stylesheet" href="CSS/contact.css">
+  <link rel="stylesheet" href="CSS/project.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pap... (omitible)" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!--  Menú de navegación -->
+  <header>
+    <nav>
+      <h2 class="logo">BskCfv</h2>
+      <ul class="nav-links">
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--  Sección principal -->
+  <section id="hero">
+    <div class="hero-content">
+      <img src="assets/profile.jpg" alt="Foto de perfil" class="profile-pic">
+      <h1>Cristian Valderrama</h1>
+      <h3 class="typing">Backend Developer | Database Enthusiast</h3>
+      <div class="social-links">
+        <button class="btn-round">
+          <a id="a-red" href="https://github.com/bskcfv" target="_blank">GitHub</a>
+        </button>
+        <button class="btn-round">
+          <a id="a-red" href="https://linkedin.com/in/crisheads" target="_blank">LinkedIn</a>
+        </button>
+      </div>
+      <button id="downloadCV" class="btn-download">
+        Descargar CV
+      </button>
+    </div>
+  </section>
+
+<section id="projects">
+  <h2>Proyectos Destacados</h2>
+  <div class="projects-container">
+
+    <!-- Proyecto 1 -->
+    <div class="project-card">
+      <h3>Inventory Management System</h3>
+      <p>
+        Sistema de inventario con autenticación JWT, CRUD de productos y conexión a MongoDB. 
+        Diseñado para gestionar existencias y movimientos de stock de forma eficiente.
+      </p>
+
+      <div class="tech-icons">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+      </div>
+
+      <a href="https://github.com/bskcfv/InventarioBsk" target="_blank" class="project-link">
+        <i class="fab fa-github"></i> Ver Repositorio
+      </a>
+    </div>
+
+    <!-- Proyecto 2 -->
+    <div class="project-card">
+      <h3>Gario</h3>
+      <p>
+        Sistema backend en Node.js para administrar finanzas personales mediante registro de ingresos, gastos y generación de reportes.
+      </p>
+      <p class="project-role">Rol: Backend Developer | Responsable del backend, base de datos y autenticación JWT (2 integrantes)</p>
+
+      <div class="tech-icons">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="MySQL">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+      </div>
+
+      <a href="https://github.com/60GodlysecondsGroup/Gario_BackEnd" target="_blank" class="project-link">
+        <i class="fab fa-github"></i> Ver Repositorio
+      </a>
+    </div>
+
+    <!-- Proyecto 3 -->
+    <div class="project-card">
+      <h3>Perrigry-S</h3>
+      <p>
+       Plataforma de gestión para empleados y administradores de tienda, desarrollada con Next.js, PostgreSQL (desplegado en NeonDB) y MongoDB Atlas. 
+       Permite administrar usuarios, ventas y autenticación mediante reconocimiento facial.
+      </p>
+       <p class="project-role">Rol: Backend Developer | Encargado del backend, bases de datos (PostgreSQL y MongoDB) y autenticación JWT (3 integrantes)</p>
+
+      <div class="tech-icons">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-plain.svg" alt="Next.js">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+        <img src="assets/neondbicon.jpeg" alt="NeonDB" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+      </div>
+
+      <a href="https://github.com/PerriGry/perrigry-s" target="_blank" class="project-link">
+        <i class="fab fa-github"></i> Ver Repositorio
+      </a>
+    </div>
+
+
+    <!-- Proyecto 4 -->
+    <div class="project-card">
+      <h3>E-Perrigry-DB</h3>
+      <p>
+        Base de datos diseñada en PostgreSQL para un sistema de ventas con carrito de compras. Incluye tablas, secuencias, procedimientos, funciones, triggers y vistas que optimizan la gestión completa del flujo de ventas.
+      </p>
+
+      <div class="tech-icons">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL">
+      </div>
+
+      <a href="https://github.com/bskcfv/E-Perrigry-DB" target="_blank" class="project-link">
+        <i class="fab fa-github"></i> Ver Repositorio
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="skills" class="section">
+  <h2>Tecnologías</h2>
+  <p class="skills-description">
+    En mi viaje por el mundo del desarrollo backend, he cultivado experiencia y habilidades en diversas áreas. 
+    <span>Mi stack tecnológico incluye:</span>
+  </p>
+
+  <div class="skills-container">
+
+    <!-- LENGUAJES -->
+    <div class="skill-card">
+      <h3>Lenguajes</h3>
+      <div class="icons">
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+          <p>JavaScript<br><span>Intermediate</span></p>
+        </div>
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-plain.svg" />
+          <p>Java<br><span>Intermediate</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FRAMEWORKS -->
+    <div class="skill-card">
+      <h3>Frameworks</h3>
+      <div class="icons">
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+          <p>Node.js<br><span>Intermediate</span></p>
+        </div>
+        <div class="icon-item">          
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
+          <p>Express.js<br><span>Intermediate</span></p>
+        </div>
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg" />
+          <p>NextJs<br><span>Intermediate</span></p>
+        </div>
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
+          <p>Spring<br><span>Beginner</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BASES DE DATOS -->
+    <div class="skill-card">
+      <h3>Bases de datos</h3>
+      <div class="icons">
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+          <p>MySQL<br><span>Advanced</span></p>
+        </div>
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+          <p>PostgreSQL<br><span>Advanced</span></p>
+        </div>
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
+          <p>MongoDB<br><span>Beginner</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- OTROS -->
+    <div class="skill-card">
+      <h3>Otros</h3>
+      <div class="icons">
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+          <p>Git</p>
+        </div>
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+          <p>GitHub</p>
+        </div>
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
+          <p>PostMan</p>
+        </div>
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
+          <p>VsCode</p>
+        </div>
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" />
+          <p>intellij</p>
+        </div>
+        <div class="icon-item">
+          <img src="assets/neondbicon.jpeg" alt="NeonDB" />
+          <p>Neon</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+ <!-- About -->
+  <section id="about" class="section">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy estudiante universitario apasionado por el área de bases de datos y el desarrollo de software. 
+      Tengo experiencia en MySQL y PostgreSQL, además de conocimientos en JavaScript, Node.js y Java. 
+      Me caracterizo por mi interés en aprender, aportar soluciones y trabajar en equipo para alcanzar objetivos.
+    </p>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <h2>Experiencia</h2>
+
+    <div class="job">
+      <h3>Mentor de Bases de Datos Relacionales</h3>
+      <p><strong>Corporación Universitaria Minuto de Dios</strong> — Sep 2025 - Actual</p>
+      <p>
+        Apoyo a estudiantes en el aprendizaje de tecnologías SQL relacional, impartiendo tutorías prácticas en MySQL y PostgreSQL, 
+        reforzando modelado, normalización y consultas SQL. He desarrollado clases sobre conexión de MySQL con C++ en Visual Studio.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Education -->
+  <section id="about" class="section">
+    <h2>Educación</h2>
+    <p><strong>Tecnología en Desarrollo de Software</strong> — Corporación Universitaria Minuto de Dios (Feb 2024 - Actual)</p>
+  </section>
+
+
+  <!-- Certifications -->
+  <section id="skills" class="section">
+    <h2>Certificaciones</h2>
+    <p class="skills-description"></p>
+    <div class="skills-container">
+        <div class="skill-card">
+            <img class="img-card" src="assets/certificadoProgramacionPrincipiante.jpg" alt="">
+            <p><strong>Formación Principiante en Programación G9 - ONE</strong> — Alura Latam (Sep 2025)</p>
+        </div>
+        <div class="skill-card">
+          <img class="img-card" src="assets/certificadoGIT.jpg" alt="">
+          <p><strong>Git y GitHub: Control de versiones en Proyectos Web</strong> — Crehana & TECMD (Abr 2025)</p>
+        </div>
+        <div class="skill-card">
+            <img class="img-card" src="assets/certificadoDesarrolloPersonal.jpg" alt="">
+            <p><strong>Formación Desarrollo Personal G9 - ONE</strong> — Alura Latam (Sep 2025)</p>
+        </div>
+      </div>
+  </section>
+
+  <!-- Badges -->
+<section id="badges" class="section">
+  <h2>Badges</h2>
+  <p class="skills-description">Insignias obtenidas por logros y formación en plataformas reconocidas:</p>
+
+  <div class="badges-container">
+    <div class="badge-card">
+      <img src="assets/badgeQueryOpt.png" alt="">
+      <img src="https://img.shields.io/badge/Query%20Optimization-MongoDB-brightgreen?style=for-the-badge&logo=mongodb" alt="MongoDB Badge">
+      <p><strong>MongoDB University</strong></p>
+    </div>
+    <div class="badge-card">
+      <img src="assets/badgeCrud.png" alt="">
+      <img src="https://img.shields.io/badge/CRUD%20Operation-MongoDB-brightgreen?style=for-the-badge&logo=mongodb" alt="MongoDB Badge">
+      <p><strong>MongoDB University</strong></p>
+    </div>
+    <div class="badge-card">
+      <img src="assets/badgeRelationalModel.png" alt="">
+      <img src="https://img.shields.io/badge/Relational to%20Document Model-MongoDB-brightgreen?style=for-the-badge&logo=mongodb" alt="MongoDB Badge">
+      <p><strong>MongoDB University</strong></p>
+    </div>
+  </div>
+</section>
+  <!-- Contact -->
+<section id="contact" class="section">
+  <h2>Contacto</h2>
+  <div class="contact-info">
+    <p><i class="fas fa-map-marker-alt"></i> Villavicencio, Colombia</p>
+    <p><i class="fas fa-envelope"></i>
+    <a href="mailto:cristian.vcabezas@hotmail.com">cristian.vcabezas@hotmail.com</a>
+  </p>
+    <p><i class="fas fa-phone"></i> +57 310 854 0263</p>
+  </div>
+
+  <div class="contact-socials">
+    <a href="https://github.com/bskcfv" class="social-btn" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/crisheads" class="social-btn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p> 2025 Cristian Valderrama</p>
+</footer>
+
+<script src="JS/main.js"></script>
+</body>
+</html>
