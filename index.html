@@ -20,6 +20,10 @@
   <header>
     <nav>
       <h2 class="logo">BskCfv</h2>
+
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">☰</label>
+
       <ul class="nav-links">
         <li><a href="#projects">Proyectos</a></li>
         <li><a href="#about">Sobre mí</a></li>
@@ -52,6 +56,102 @@
 <section id="projects">
   <h2>Proyectos Destacados</h2>
   <div class="projects-container">
+
+    
+<!-- Proyecto: Sistema de Migración y Sincronización de Datos -->
+<div class="project-card">
+  <h3>Sistema de Migración y Sincronización de Datos</h3>
+  <p>
+    Programa de terminal desarrollado en Node.js para la migración de datos desde una base
+    de datos relacional principal alojada en <strong>NeonDB</strong> hacia bases de datos
+    relacionales locales (<strong>PostgreSQL</strong>) y bases de datos NoSQL
+    (<strong>MongoDB Atlas</strong>).  
+    Incluye procesos de sincronización que permiten reflejar los cambios realizados en
+    MongoDB en la base de datos relacional principal, mediante la integración de un
+    microservicio en <strong>Python con FastAPI</strong> encargado de traducir operaciones
+    MongoDB a sentencias SQL.
+  </p>
+
+  <div class="tech-icons">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js">
+    <img src="assets/neondbicon.jpeg" alt="NeonDB" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI">
+  </div>
+
+  <a href="https://github.com/bskcfv/Sync_DBs" target="_blank" class="project-link">
+    <i class="fab fa-github"></i> Ver Repositorio
+  </a>
+</div>
+
+<!-- Proyecto: Backend Sistema de Gestión de Reservas Hoteleras -->
+<div class="project-card">
+  <h3>Backend para Sistema de Gestión de Reservas Hoteleras</h3>
+  <p>
+    API backend modular desarrollada con <strong>Node.js y Express</strong> para la gestión
+    integral de reservas, espacios, solicitudes, empleados, tarifas y servicios adicionales
+    en un entorno hotelero.  
+    Implementa validaciones estrictas con <strong>Zod</strong>, autenticación y autorización
+    mediante <strong>JWT almacenados en cookies HTTP-only</strong>, generación de reportes
+    en <strong>Excel (XLSX)</strong>, envío de correos electrónicos y documentación completa
+    de la API con <strong>Swagger/Scalar</strong>.
+  </p>
+
+  <div class="tech-icons">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+  </div>
+
+  <a href="https://github.com/ProyectoDemet/Backend-DEMET" target="_blank" class="project-link">
+    <i class="fab fa-github"></i> Ver Repositorio
+  </a>
+</div>
+
+    <!-- Proyecto 3 -->
+    <div class="project-card">
+      <h3>Perrigry-S</h3>
+      <p>
+       Plataforma de gestión para empleados y administradores de tienda, desarrollada con Next.js, PostgreSQL (desplegado en NeonDB) y MongoDB Atlas. 
+       Permite administrar usuarios, ventas y autenticación mediante reconocimiento facial.
+      </p>
+       <p class="project-role">Rol: Backend Developer | Encargado del backend, bases de datos (PostgreSQL y MongoDB) y autenticación JWT (3 integrantes)</p>
+
+      <div class="tech-icons">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-plain.svg" alt="Next.js">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+        <img src="assets/neondbicon.jpeg" alt="NeonDB" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+      </div>
+
+      <a href="https://github.com/PerriGry/perrigry-s" target="_blank" class="project-link">
+        <i class="fab fa-github"></i> Ver Repositorio
+      </a>
+    </div>
+
+    <!-- Proyecto 5 -->
+<div class="project-card">
+  <h3>VectorShop</h3>
+  <p>
+    Sistema de búsqueda semántica con IA usando MongoDB Atlas y Node.js. 
+    Permite realizar búsquedas por significado, no por coincidencia exacta, 
+    generando embeddings con el modelo <strong>intfloat/multilingual-e5-large</strong>.
+  </p>
+
+  <div class="tech-icons">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+  </div>
+
+  <a href="https://github.com/bskcfv/VectorShop" target="_blank" class="project-link">
+    <i class="fab fa-github"></i> Ver Repositorio
+  </a>
+</div>
 
     <!-- Proyecto 1 -->
     <div class="project-card">
@@ -93,28 +193,6 @@
       </a>
     </div>
 
-    <!-- Proyecto 3 -->
-    <div class="project-card">
-      <h3>Perrigry-S</h3>
-      <p>
-       Plataforma de gestión para empleados y administradores de tienda, desarrollada con Next.js, PostgreSQL (desplegado en NeonDB) y MongoDB Atlas. 
-       Permite administrar usuarios, ventas y autenticación mediante reconocimiento facial.
-      </p>
-       <p class="project-role">Rol: Backend Developer | Encargado del backend, bases de datos (PostgreSQL y MongoDB) y autenticación JWT (3 integrantes)</p>
-
-      <div class="tech-icons">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-plain.svg" alt="Next.js">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
-        <img src="assets/neondbicon.jpeg" alt="NeonDB" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-      </div>
-
-      <a href="https://github.com/PerriGry/perrigry-s" target="_blank" class="project-link">
-        <i class="fab fa-github"></i> Ver Repositorio
-      </a>
-    </div>
-
 
     <!-- Proyecto 4 -->
     <div class="project-card">
@@ -132,25 +210,7 @@
       </a>
     </div>
 
-    <!-- Proyecto 5 -->
-<div class="project-card">
-  <h3>VectorShop</h3>
-  <p>
-    Sistema de búsqueda semántica con IA usando MongoDB Atlas y Node.js. 
-    Permite realizar búsquedas por significado, no por coincidencia exacta, 
-    generando embeddings con el modelo <strong>intfloat/multilingual-e5-large</strong>.
-  </p>
 
-  <div class="tech-icons">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-  </div>
-
-  <a href="https://github.com/bskcfv/VectorShop" target="_blank" class="project-link">
-    <i class="fab fa-github"></i> Ver Repositorio
-  </a>
-</div>
 
 
   </div>
@@ -278,7 +338,7 @@
 
     <div class="job">
       <h3>Mentor de Bases de Datos Relacionales</h3>
-      <p><strong>Corporación Universitaria Minuto de Dios</strong> — Sep 2025 - Actual</p>
+      <p><strong>Corporación Universitaria Minuto de Dios</strong> — Sep 2025 - Nov 2025</p>
       <p>
         Apoyo a estudiantes en el aprendizaje de tecnologías SQL relacional, impartiendo tutorías prácticas en MySQL y PostgreSQL, 
         reforzando modelado, normalización y consultas SQL. He desarrollado clases sobre conexión de MySQL con C++ en Visual Studio.
@@ -314,6 +374,10 @@
         <div class="skill-card">
             <img class="img-card" src="assets/certificadoAnalisisdeDatos.jpg" alt="">
             <p><strong>Analisis Exploratorio de Datos</strong> - Servicio Nacional de Aprendizaje (Oct 2025)</p>
+        </div>
+        <div class="skill-card">
+            <img class="img-card" src="assets/retosProgramacion.jpeg" alt="">
+            <p><strong>Participación Retos de Programación</strong> - Gobernación del Meta (Dic 2025)</p>
         </div>
       </div>
   </section>

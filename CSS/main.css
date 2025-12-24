@@ -96,3 +96,82 @@ body {
   transition: color 0.3s;
   font-weight: 5;
 }
+
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .section {
+    padding: 80px 8%;
+  }
+
+  #hero {
+    height: 70vh;
+  }
+
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  #hero {
+    height: auto;
+    padding: 120px 20px 80px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .typing {
+    font-size: 0.95rem;
+  }
+
+  .section {
+    padding: 70px 20px;
+  }
+
+  .btn-round {
+    width: 95px;
+    height: 32px;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+}
+
+/* Mobile pequeño */
+@media (max-width: 480px) {
+  #hero {
+    padding: 110px 15px 70px;
+  }
+
+  .profile-pic {
+    width: 105px;
+    height: 105px;
+  }
+
+  .typing {
+    font-size: 0.85rem;
+  }
+
+  .btn-round {
+    width: 90px;
+    height: 30px;
+    font-size: 0.85rem;
+  }
+
+  .section {
+    padding: 60px 15px;
+  }
+}

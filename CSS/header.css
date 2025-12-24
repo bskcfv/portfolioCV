@@ -1,11 +1,11 @@
 /* HEADER */
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(10, 15, 25, 0.95);
-    border-bottom: 1px solid #1c2535;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(10, 15, 25, 0.95);
+  border-bottom: 1px solid #1c2535;
+  z-index: 1000;
 }
 
 nav {
@@ -20,6 +20,7 @@ nav {
   font-weight: bold;
 }
 
+/* LINKS */
 .nav-links {
   list-style: none;
   display: flex;
@@ -34,4 +35,47 @@ nav {
 
 .nav-links a:hover {
   color: #4da6ff;
+}
+
+/* CHECKBOX (OCULTO) */
+#menu-toggle {
+  display: none;
+}
+
+/* ICONO HAMBURGUESA */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: #e0e6ed;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav {
+    padding: 15px 25px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 15, 25, 0.98);
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+    border-bottom: 1px solid #1c2535;
+  }
+
+  /* Mostrar menú cuando el checkbox está activo */
+  #menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
 }
