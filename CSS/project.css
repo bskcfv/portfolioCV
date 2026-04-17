@@ -1,127 +1,101 @@
 /* ===== Sección de Proyectos ===== */
+/* SECTION */
 #projects {
-  background-color: #0b0f19; 
-  color: #c9d1d9;
-  padding: 60px 20px;
-  text-align: center;
+  padding: 80px 60px;
+  text-align: left;
 }
 
+/* TITULO */
 #projects h2 {
-  font-size: 2.2rem;
-  margin-bottom: 40px;
-  color: #f0f6fc;
-  border-bottom: 2px solid #30363d;
-  display: inline-block;
-  padding-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #e6edf3;
 }
 
-/* Contenedor general */
+/* GRID */
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-  max-width: 1100px;
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
 }
 
-/* Tarjeta individual */
+/* CARD */
 .project-card {
-  background: #161b22;
-  border: 1px solid #30363d;
-  border-radius: 12px;
-  padding: 25px;
-  text-align: left;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  background: #0d1117;
+  border: 1px solid #21262d;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+  position: relative;
 }
 
-/* Hover elegante */
+/* HOVER */
 .project-card:hover {
-  transform: translateY(-6px);
-  border-color: #58a6ff;
-  box-shadow: 0 8px 20px rgba(88, 166, 255, 0.1);
+  border-color: #4da6ff;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(77, 166, 255, 0.1);
 }
 
-/* Título del proyecto */
+/* TERMINAL LINE */
+.terminal-line {
+  color: #4da6ff;
+  font-family: monospace;
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+}
+
+/* TITLE */
 .project-card h3 {
-  color: #f0f6fc;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-bottom: 10px;
 }
 
-/* Descripción */
-.project-card p {
+/* DESC */
+.project-desc {
+  font-size: 0.9rem;
   color: #8b949e;
-  font-size: 0.95rem;
-  line-height: 1.5;
   margin-bottom: 15px;
 }
 
-/* Enlace al repo */
-.project-link {
-  display: inline-flex;
-  align-items: center;
+/* TECH STACK */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  color: #58a6ff;
-  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.tech-stack span {
+  background: #161b22;
+  border: 1px solid #30363d;
+  padding: 5px 10px;
+  font-size: 0.75rem;
+  border-radius: 5px;
+  color: #c9d1d9;
+}
+
+/* LINK */
+.project-link {
+  font-size: 0.85rem;
+  color: #4da6ff;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: 0.2s;
 }
 
 .project-link:hover {
   color: #79c0ff;
 }
 
-/* Ícono de GitHub */
-.project-link i {
-  font-size: 1.1rem;
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 0.7rem;
+  background: #4da6ff;
+  color: #0b0f19;
+  padding: 3px 8px;
+  border-radius: 4px;
 }
-
-/* ===== Iconos de tecnologías ===== */
-.tech-icons {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-bottom: 15px;
-  margin-top: 10px;
-  justify-content: center;
-}
-
-.tech-icons img {
-  width: 50px;
-  height: 50px;
-  opacity: 0.85;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.tech-icons img:hover {
-  transform: scale(1.15);
-  opacity: 1;
-}
-
-/* Versión más minimalista de project-role */
-.project-role {
-  display: block;
-  color: #9eb7d5;
-  font-size: 0.9rem;
-  font-weight: 400;
-  margin-top: 8px;
-  margin-bottom: 12px;
-  border-left: 3px solid #111212;
-  padding-left: 10px;
-  line-height: 1.4;
-  background: none;
-  box-shadow: none;
-  letter-spacing: 0.2px;
-  transition: color 0.3s ease;
-}
-
-.project-role:hover {
-  color: #cfe9ff;
-  border-left-color: #454848;
-}
-
-
 
 /* Adaptabilidad */
 @media (max-width: 600px) {

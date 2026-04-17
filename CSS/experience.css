@@ -1,0 +1,130 @@
+/* ===== EXPERIENCE / TIMELINE ===== */
+#experience {
+  padding: 80px 60px;
+}
+
+#experience h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #e6edf3;
+}
+
+/* CONTENEDOR */
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+/* 🔥 LÍNEA ÚNICA */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 0;
+  background: linear-gradient(#4da6ff, transparent);
+  transition: height 1s ease;
+}
+
+/* ACTIVAR */
+.timeline.active::before {
+  height: 100%;
+}
+
+/* ITEM */
+.timeline-item {
+  margin-bottom: 35px;
+
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+/* APARECER */
+.timeline-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* DELAY */
+.timeline-item:nth-child(1) { transition-delay: 0.1s; }
+.timeline-item:nth-child(2) { transition-delay: 0.3s; }
+.timeline-item:nth-child(3) { transition-delay: 0.5s; }
+
+/* CONTENIDO */
+.timeline-content {
+  background: #0d1117;
+  border: 1px solid #21262d;
+  padding: 15px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+  position: relative;
+}
+
+/* EFECTO TERMINAL (🔥 reemplazo del punto) */
+.timeline-content::before {
+  content: ">";
+  position: absolute;
+  left: -18px;
+  color: #4da6ff;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+/* HOVER */
+.timeline-content:hover {
+  border-color: #4da6ff;
+  transform: translateX(5px);
+}
+
+.timeline-content:hover::before {
+  opacity: 1;
+}
+
+/* TEXTO */
+.timeline-date {
+  font-size: 0.8rem;
+  color: #4da6ff;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.timeline-content h3 {
+  color: #e6edf3;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.timeline-company {
+  font-size: 0.85rem;
+  color: #8b949e;
+  margin-bottom: 5px;
+}
+
+.timeline-content p {
+  font-size: 0.9rem;
+  color: #8b949e;
+}
+
+/* FUTURO (estilo especial) */
+.timeline-item.future .timeline-content {
+  border-style: dashed;
+  opacity: 0.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  #experience {
+    padding: 60px 20px;
+  }
+
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .timeline-content::before {
+    left: -14px;
+  }
+}
