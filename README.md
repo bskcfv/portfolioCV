@@ -44,7 +44,7 @@ Incluye **tablas**, **secuencias**, **procedimientos**, **funciones**, **trigger
 
 - **Nombre:** Cristian Valderrama  
 - **Rol:** Backend Database Developer   
-- **GitHub:** [github.com/CristianValderrama](https://github.com/CristianValderrama)  
+- **GitHub:** [github.com/bskcfv](https://github.com/bskcfv)  
 - **LinkedIn:** [linkedin.com/in/cristianvalderrama]((https://www.linkedin.com/in/crisheads/))
 
 ---
