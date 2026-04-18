@@ -20,6 +20,15 @@ nav {
   padding: 30px 20px;
 }
 
+.donut-container {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  opacity: 0.55;
+  pointer-events: none;
+  user-select: none;
+}
+
 /* LOGO */
 .logo {
   color: #4da6ff;
@@ -92,6 +101,10 @@ nav {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+
+   .donut-container {
+    display: none;
+  }
 
   /* HEADER pasa a TOP BAR */
   header {
