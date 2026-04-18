@@ -43,3 +43,64 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 items.forEach(item => observer.observe(item));
+
+const lines = document.querySelectorAll(".terminal p, .terminal .output");
+
+lines.forEach((el, index) => {
+  el.style.opacity = 0;
+  el.style.transform = "translateY(10px)";
+
+  setTimeout(() => {
+    el.style.transition = "all 0.4s ease";
+    el.style.opacity = 1;
+    el.style.transform = "translateY(0)";
+  }, index * 150);
+});
+
+document.querySelectorAll(".badge-card").forEach(card => {
+  const text = card.querySelector("p").textContent;
+  card.title = `Achievement unlocked: ${text}`;
+});
+
+document.querySelectorAll(".badge-card").forEach((card, i) => {
+  card.style.animationDelay = `${i * 0.2}s`;
+});
+
+function openModal(imgSrc) {
+  const modal = document.getElementById("cert-modal");
+  const modalImg = document.getElementById("cert-img");
+
+  modalImg.src = imgSrc;
+
+  // Detectar si es badge
+  if (imgSrc.includes("badge")) {
+    modalImg.classList.add("badge-view");
+  } else {
+    modalImg.classList.remove("badge-view");
+  }
+
+  modal.style.display = "block";
+
+  setTimeout(() => {
+    modal.classList.add("show");
+  }, 10);
+}
+
+function closeModal() {
+  const modal = document.getElementById("cert-modal");
+
+  modal.classList.remove("show");
+
+  // esperar animación antes de ocultar
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 300);
+}
+
+// cerrar al hacer click fuera
+window.onclick = function(event) {
+  const modal = document.getElementById("cert-modal");
+  if (event.target === modal) {
+    closeModal();
+  }
+}

@@ -10,63 +10,72 @@
   color: #e6edf3;
 }
 
-/* CONTENEDOR */
-.contact-container {
-  display: grid;
-  gap: 20px;
-  max-width: 700px;
-}
-
-/* BLOQUES */
-.contact-block {
+/* TERMINAL */
+.terminal {
   background: #0d1117;
   border: 1px solid #21262d;
-  padding: 15px 20px;
-  border-radius: 8px;
-  transition: 0.25s;
+  border-radius: 10px;
+  padding: 25px;
+  max-width: 700px;
+  font-family: monospace;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
-/* HOVER */
-.contact-block:hover {
-  border-color: #4da6ff;
-  transform: translateX(5px);
+/* PROMPT */
+.prompt {
+  color: #4da6ff;
+  margin-right: 8px;
 }
 
-/* TEXTO */
-.contact-block p:last-child {
+/* TEXTO NORMAL */
+.terminal p {
+  margin: 10px 0;
+  color: #c9d1d9;
+  font-size: 0.9rem;
+}
+
+/* RESPUESTAS */
+.response {
   color: #8b949e;
-  font-size: 0.95rem;
+  margin-left: 20px;
 }
 
 /* LINKS */
-.contact-links {
-  display: flex;
-  gap: 20px;
-}
-
-.contact-links a {
-  color: #4da6ff;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: 0.2s;
-}
-
-.contact-links a:hover {
-  color: #79c0ff;
-}
-
-/* EMAIL */
-.contact-block a {
-  color: #4da6ff;
+.response a {
+  color: #58a6ff;
   text-decoration: none;
 }
 
-.contact-block a:hover {
+.response a:hover {
   text-decoration: underline;
 }
 
-/* DESTACADO */
-.highlight {
-  border-color: #4da6ff;
-  background: rgba(77, 166, 255, 0.05);
+/* CURSOR PARPADEANTE */
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  background: #4da6ff;
+  animation: blink 1s infinite;
+}
+
+/* ANIMACION */
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  #contact {
+    padding: 60px 20px;
+  }
+
+  .terminal {
+    padding: 20px;
+  }
+
+  .terminal p {
+    font-size: 0.85rem;
+  }
 }

@@ -10,30 +10,173 @@
   color: #e6edf3;
 }
 
-/* CONTENEDOR */
+/* GRID */
 .cert-container {
   display: grid;
-  gap: 15px;
-  max-width: 700px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
-/* ITEM */
-.cert-item {
+/* CARD */
+.cert-card {
   background: #0d1117;
   border: 1px solid #21262d;
-  padding: 12px 18px;
-  border-radius: 6px;
+  border-radius: 10px;
+  padding: 20px;
   transition: 0.25s;
+  cursor: pointer;
+  position: relative;
 }
 
 /* HOVER */
-.cert-item:hover {
+.cert-card:hover {
   border-color: #4da6ff;
-  transform: translateX(5px);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(77,166,255,0.1);
 }
 
-/* TEXTO */
-.cert-item p:last-child {
+/* TITULO */
+.cert-card h3 {
+  color: #e6edf3;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+/* EMPRESA */
+.cert-card p {
   color: #8b949e;
   font-size: 0.9rem;
+}
+
+/* FECHA */
+.cert-card span {
+  display: block;
+  font-size: 0.8rem;
+  color: #4da6ff;
+  margin: 10px 0;
+}
+
+/* BOTON */
+.cert-card button {
+  background: transparent;
+  border: 1px solid #4da6ff;
+  color: #4da6ff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cert-card button:hover {
+  background: #4da6ff;
+  color: #0d1117;
+}
+
+/* ===== MODAL BASE ===== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.0); /* empieza transparente */
+  opacity: 0;
+  transition: opacity 0.3s ease, background 0.3s ease;
+}
+
+/* MODAL ACTIVO */
+.modal.show {
+  display: block;
+  opacity: 1;
+  background: rgba(0,0,0,0.85);
+}
+
+/* IMAGEN */
+/* IMAGEN NORMAL (certificados) */
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  max-height: 85vh;
+  border-radius: 10px;
+
+  transform: scale(0.85);
+  opacity: 0;
+  transition: all 0.35s ease;
+}
+
+/* ===== BADGE VIEW ===== */
+.modal-content.badge-view {
+  max-width: 400px;   /* 👈 tamaño controlado */
+  max-height: 400px;
+  object-fit: contain;
+}
+
+/* RESPONSIVE BADGE */
+@media (max-width: 768px) {
+  .modal-content.badge-view {
+    max-width: 250px;
+    max-height: 250px;
+  }
+}
+
+/* CUANDO ABRE */
+.modal.show .modal-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* CLOSE */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Mostrar botón cerrar */
+.modal.show .close {
+  opacity: 1;
+}
+
+.modal-content:hover {
+  transform: scale(1.02);
+}
+
+/* BADGES VARIANTE */
+.cert-card.badge {
+  border-style: dashed;
+}
+
+/* etiqueta pequeña visual */
+.cert-card.badge span {
+  color: #2ea043;
+}
+
+/* hover diferente */
+.cert-card.badge:hover {
+  border-color: #2ea043;
+  box-shadow: 0 10px 25px rgba(46, 160, 67, 0.15);
+}
+
+.section-subtitle {
+  color: #8b949e;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+}
+
+.modal-content.badge-view {
+  background: #0d1117;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #21262d;
 }

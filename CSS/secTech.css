@@ -10,43 +10,58 @@
   color: #e6edf3;
 }
 
-/* GRID */
-.skills-container {
-  display: grid;
-  gap: 20px;
-  max-width: 700px;
-}
 
-/* BLOQUES */
-.skill-block {
+/* TERMINAL CONTENEDOR */
+.terminal {
   background: #0d1117;
   border: 1px solid #21262d;
-  padding: 15px 20px;
-  border-radius: 8px;
-  transition: 0.25s;
-}
-
-/* HOVER */
-.skill-block:hover {
-  border-color: #4da6ff;
-  transform: translateX(5px);
-}
-
-/* TERMINAL */
-.terminal-line {
-  color: #4da6ff;
+  border-radius: 10px;
+  padding: 25px;
+  max-width: 700px;
   font-family: monospace;
-  font-size: 0.8rem;
-  margin-bottom: 5px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
-/* TEXTO */
-.skill-block p:last-child {
-  color: #8b949e;
+/* LINEA COMANDO */
+.line {
+  color: #e6edf3;
+  margin-bottom: 5px;
   font-size: 0.9rem;
 }
 
-.featured {
+/* PROMPT */
+.prompt {
+  color: #4da6ff;
+  margin-right: 8px;
+}
+
+/* OUTPUT */
+.output {
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+
+.output p {
+  color: #8b949e;
+  font-size: 0.85rem;
+  margin: 2px 0;
+}
+
+/* EFECTO HOVER SUAVE */
+.terminal:hover {
   border-color: #4da6ff;
-  background: rgba(77, 166, 255, 0.05);
+}
+
+/* CURSOR */
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  background: #4da6ff;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
 }
