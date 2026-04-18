@@ -13,13 +13,47 @@
 
 /* TERMINAL CONTENEDOR */
 .terminal {
-  background: #0d1117;
-  border: 1px solid #21262d;
-  border-radius: 10px;
+  background: rgba(13, 17, 23, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(77, 166, 255, 0.15);
+  border-radius: 12px;
   padding: 25px;
   max-width: 700px;
   font-family: monospace;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+
+  box-shadow: 
+    0 0 20px rgba(0,0,0,0.4),
+    0 0 40px rgba(77, 166, 255, 0.05);
+
+  position: relative;
+  overflow: hidden;
+}
+
+.terminal::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  background: #ff5f56;
+  border-radius: 50%;
+  box-shadow:
+    18px 0 #ffbd2e,
+    36px 0 #27c93f;
+}
+
+.terminal::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(77,166,255,0.03),
+    transparent 40%
+  );
+  pointer-events: none;
 }
 
 /* LINEA COMANDO */
@@ -45,11 +79,20 @@
   color: #8b949e;
   font-size: 0.85rem;
   margin: 2px 0;
+  opacity: 0.85;
+}
+
+.output p:hover {
+  color: #c9d1d9;
 }
 
 /* EFECTO HOVER SUAVE */
 .terminal:hover {
   border-color: #4da6ff;
+  box-shadow: 
+    0 0 25px rgba(77, 166, 255, 0.1),
+    0 0 60px rgba(77, 166, 255, 0.05);
+  transform: translateY(-3px);
 }
 
 /* CURSOR */
