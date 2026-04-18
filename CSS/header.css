@@ -5,11 +5,12 @@ header {
   left: 0;
   width: 220px;
   height: 100vh;
-  background: #0a0f19;
-  border-right: 1px solid #1c2535;
+  background: rgba(10, 15, 25, 0.55);
+  border-right: 1px solid rgba(77, 166, 255, 0.15);
   display: flex;
   flex-direction: column;
   z-index: 1000;
+  box-shadow: 0 0 40px rgba(77, 166, 255, 0.05);
 }
 
 nav {
@@ -124,7 +125,8 @@ nav {
     right: -100%;
     width: 70%;
     height: 100vh;
-    background: #0a0f19;
+    background: rgba(10, 15, 25, 0.75);
+    backdrop-filter: blur(12px);
     flex-direction: column;
     padding: 80px 25px;
     gap: 25px;
@@ -162,4 +164,18 @@ nav {
   body {
     margin-left: 0;
   }
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    transparent,
+    rgba(77, 166, 255, 0.4),
+    transparent
+  );
 }
