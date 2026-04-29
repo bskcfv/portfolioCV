@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="CSS/project.css">
   <link rel="stylesheet" href="CSS/experience.css">
   <link rel="stylesheet" href="CSS/donut.css">
-  <link rel="stylesheet" href="CSS/piano.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-pap... (omitible)" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -317,7 +316,7 @@
         </div>
         <div class="icon-item">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
-          <p>Spring<br><span>Intermediate</span></p>
+          <p>Spring Boot<br><span>Intermediate</span></p>
         </div>
         <div class="icon-item">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" />
@@ -380,24 +379,6 @@
       </div>
     </div>
 
-     <!-- DERECHA -->
-    <div class="piano-container">
-      <div class="piano-sintetizador">
-        <div class="piano-keyboard">
-
-          <div class="key white" data-key="a" data-target="lenguajes"></div>
-          <div class="key black" data-key="w" data-target="backend"></div>
-
-          <div class="key white" data-key="s" data-target="backend"></div>
-          <div class="key black" data-key="e" data-target="database"></div>
-
-          <div class="key white" data-key="d" data-target="database"></div>
-          <div class="key white" data-key="f" data-target="cloud"></div>
-
-        </div>
-      </div>
-    </div>
-
   </div>
 </section>
 
@@ -442,6 +423,13 @@
         <h3>Programación G9</h3>
         <p>Alura Latam</p>
         <span>Sep 2025</span>
+        <button>View Certification</button>
+      </div>
+
+      <div class="cert-card" onclick="openModal('assets/certificadoJavaPoo.JPG')">
+        <h3>Programación Java POO</h3>
+        <p>Alura Latam</p>
+        <span>Feb 2026</span>
         <button>View Certification</button>
       </div>
 
@@ -540,8 +528,6 @@
 
   </section>
   
-  <script src="https://unpkg.com/tone@14.7.77/build/Tone.js"></script>
-  <script src="JS/paino.js"></script>
   <script src="JS/main.js"></script>
   <script src="JS/donut.js"></script>
 </body>

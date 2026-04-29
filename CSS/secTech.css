@@ -3,7 +3,7 @@
   background-color: transparent;
   color: #e6edf3;
   padding: 80px 10%;
-  font-family: "Poppins", sans-serif;
+  font-family: monospace;
   text-align: center;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .skills-description span {
-  color: #2f81f7;
+  color: #4da6ff;
   font-weight: 600;
 }
 
@@ -36,16 +36,11 @@
 
 /* Tarjetas */
 .skill-card {
-  display: none;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.4s ease;
-}
-
-.skill-card.active {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
+  background: transparent;
+  border-radius: 15px;
+  padding: 25px 20px;
+  box-shadow: 0 0 15px rgba(56, 139, 253, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
