@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="CSS/project.css">
   <link rel="stylesheet" href="CSS/experience.css">
   <link rel="stylesheet" href="CSS/donut.css">
+  <link rel="stylesheet" href="CSS/piano.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-pap... (omitible)" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -269,60 +270,137 @@
 
   </section>
 
-  <section id="skills">
-    <h2>Tecnologías</h2>
+  
+<section id="skills" class="section">
+  <h2>Tecnologías</h2>
+  <p class="skills-description">
+    En mi viaje por el mundo del desarrollo backend, he cultivado experiencia y habilidades en diversas áreas. 
+    <span>Mi stack tecnológico incluye:</span>
+  </p>
 
-    <div class="terminal">
+  <div class="skills-container">
 
-      <p class="line"><span class="prompt">$</span> whoami</p>
-      <p class="output">Cristian Valderrama</p>
-
-      <p class="line"><span class="prompt">$</span> main_stack</p>
-      <div class="output">
-        <p>> Spring Boot</p>
-        <p>> Node.js</p>
-        <p>> PostgreSQL</p>
-        <p>> Next.js</p>
+    <!-- LENGUAJES -->
+    <div class="skill-card" id="lenguajes">
+      <h3>Lenguajes</h3>
+      <div class="icons">
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+          <p>JavaScript<br><span>Intermediate</span></p>
+        </div>
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-plain.svg" />
+          <p>Java<br><span>Intermediate</span></p>
+        </div>
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+          <p>Python<br><span>Beginner</span></p>
+        </div>
       </div>
-
-      <p class="line"><span class="prompt">$</span> languages</p>
-      <div class="output">
-        <p>> JavaScript</p>
-        <p>> Java</p>
-        <p>> SQL</p>
-      </div>
-
-      <p class="line"><span class="prompt">$</span> backend_tools</p>
-      <div class="output">
-        <p>> Express</p>
-        <p>> FastAPI</p>
-        <p>> Spring Boot</p>
-      </div>
-
-      <p class="line"><span class="prompt">$</span> databases</p>
-      <div class="output">
-        <p>> PostgreSQL</p>
-        <p>> MySQL</p>
-        <p>> MongoDB</p>
-        <p>> Supabase</p>
-      </div>
-
-      <p class="line"><span class="prompt">$</span> tools --list</p>
-      <div class="output">
-        <p>> Git</p>
-        <p>> GitHub</p>
-        <p>> Postman</p>
-        <p>> VS Code</p>
-        <p>> IntelliJ</p>
-      </div>
-
-      <!-- cursor final -->
-      <p class="line cursor-line">
-        <span class="prompt">$</span> <span class="cursor"></span>
-      </p>
-
     </div>
-  </section>
+
+    <!-- FRAMEWORKS -->
+    <div class="skill-card" id="backend">
+      <h3>Frameworks</h3>
+      <div class="icons">
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+          <p>Node.js<br><span>Intermediate</span></p>
+        </div>
+        <div class="icon-item">          
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
+          <p>Express.js<br><span>Intermediate</span></p>
+        </div>
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg" />
+          <p>NextJs<br><span>Intermediate</span></p>
+        </div>
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
+          <p>Spring<br><span>Intermediate</span></p>
+        </div>
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" />
+          <p>FastApi<br><span>Beginner</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BASES DE DATOS -->
+    <div class="skill-card" id="database">
+      <h3>Bases de datos</h3>
+      <div class="icons">
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+          <p>MySQL<br><span>Advanced</span></p>
+        </div>
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+          <p>PostgreSQL<br><span>Advanced</span></p>
+        </div>
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
+          <p>MongoDB<br><span>Intermediate</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- OTROS -->
+    <div class="skill-card" id="cloud">
+      <h3>Otros</h3>
+      <div class="icons">
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+          <p>Git</p>
+        </div>
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+          <p>GitHub</p>
+        </div>
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
+          <p>PostMan</p>
+        </div>
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
+          <p>VsCode</p>
+        </div>
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" />
+          <p>intellij</p>
+        </div>
+        <div class="icon-item">
+          <img src="assets/neondbicon.jpeg" alt="NeonDB" />
+          <p>Neon</p>
+        </div>
+        <div class="icon-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" />
+          <p>SupaBase</p>
+        </div>
+      </div>
+    </div>
+
+     <!-- DERECHA -->
+    <div class="piano-container">
+      <div class="piano-sintetizador">
+        <div class="piano-keyboard">
+
+          <div class="key white" data-key="a" data-target="lenguajes"></div>
+          <div class="key black" data-key="w" data-target="backend"></div>
+
+          <div class="key white" data-key="s" data-target="backend"></div>
+          <div class="key black" data-key="e" data-target="database"></div>
+
+          <div class="key white" data-key="d" data-target="database"></div>
+          <div class="key white" data-key="f" data-target="cloud"></div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
   <section id="about">
 
     <h2>Sobre mí</h2>
@@ -461,7 +539,9 @@
     </div>
 
   </section>
-
+  
+  <script src="https://unpkg.com/tone@14.7.77/build/Tone.js"></script>
+  <script src="JS/paino.js"></script>
   <script src="JS/main.js"></script>
   <script src="JS/donut.js"></script>
 </body>
