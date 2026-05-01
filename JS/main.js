@@ -1,6 +1,6 @@
 document.getElementById("downloadCV").addEventListener("click", () => {
   // Ruta del archivo (ajústala según tu estructura)
-  const fileUrl = "assets/Cristian_Valderrama_CV.pdf";
+  const fileUrl = "assets/Currículum Vitae CV Valderrama Cabezas Cristian Felipe.pdf";
 
   // Crea un enlace temporal para forzar la descarga
   const a = document.createElement("a");
